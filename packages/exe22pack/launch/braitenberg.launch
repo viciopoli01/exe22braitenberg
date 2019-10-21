@@ -1,0 +1,5 @@
+<launch>
+
+  <node pkg="exe22pack" type="braitenberg.py" name="braitenberg" output="screen"/>
+
+</launch>

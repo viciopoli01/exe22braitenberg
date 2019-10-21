@@ -1,0 +1,11 @@
+<package>
+  <name>exe22pack</name>
+  <version>0.1.0</version>
+  <description>
+  This package to do stuffs for exe 22.
+  </description>
+  <maintainer email="polivicio@gmail.com">VINCENZO POLIZZI</maintainer>
+  <license>None</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
