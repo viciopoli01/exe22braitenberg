@@ -81,7 +81,6 @@ class BraitenbergNode(DTROS):
         #Define topics:
         camera_topic="/"+self.veh+"/camera_node/image/compressed"
         wheel_topic="/"+self.veh+"/wheels_driver_node/wheels_cmd"
-        led_topic = "/"+self.veh+"/led_emitter_node/change_color_pattern"
 
         #init cv bridge
         self.bridge = CvBridge()
@@ -331,7 +330,6 @@ class BraitenbergNode(DTROS):
 
         # PUT YOUR CODE HERE
         self.wheels.publish(self.createWheelCmd(0.0,0.0))
-        rospy.Service('/'+self.veh+'/led_emitter_node/set_pattern', String, "pattern_name: {data: WHITE}")
 
         super(BraitenbergNode, self).onShutdown()
 
